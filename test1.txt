@@ -1,0 +1,8 @@
+create table employee
+(  
+      EmployeeID number CONSTRAINT PKEMPID primary key,
+      EmployeeName varchar2(10) ,
+      EmployeeAddress varchar2(20) CONSTRAINT CHKEMPADD check ( EmployeeAddress not in( 'Newyork', 'London' ,'Paris' ) ),
+      salary number CONSTRAINT CHKEMPSAL check ( salary between 20000 and 30000),
+      companyaddress varchar2(20) default 'ASV Suntech Park'
+) 
