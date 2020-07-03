@@ -1,0 +1,15 @@
+a.) create table
+
+create table employee ( employee_id number(3) , employee_name varchar2(10) , employee_address varchar (30) , DOB date ,DOJ date , salary number(6) )
+
+b.) insert 5 records 
+
+insert into employee values ( 1 , 'ganesh' , 'nandyal' , '08/09/1998' , '02/20/2018' , 30000 )
+insert into employee values ( 2 , 'mahesh' , 'kurnool' , '07/10/1999' , '03/21/2017' , 40000 )
+insert into employee values ( 3 , 'suresh' , 'vijayawada' , '06/11/1997' , '04/22/2016' , 50000 )
+insert into employee values ( 4 , 'naresh' , 'guntur' , '05/12/1996' , '05/23/2015' , 60000 )
+insert into employee values ( 1 , 'kiran' , 'hyderabad' , '09/13/1995' , '06/24/2014' , 70000 )
+
+c.) retrieve all records
+
+select * from employee
