@@ -1,0 +1,21 @@
+create table students
+( student_id number(4) primary key , student_name varchar2(6) )
+
+
+
+insert into students values ( 1 , 'ganesh')
+
+create table fees
+( student_id number(4) primary key , amount number(5) ,
+  constraint fksid foreign key(student_id) references students(student_id) on delete cascade )
+
+insert into fees values ( 1 , 20000)
+
+delete from students
+where student_id = 1
+
+select * from students
+
+select * from fees
+
+drop table fees
