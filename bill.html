@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var billAmount = parseInt(prompt("Enter the bill amount : "));
+var today = new Date();
+var day = today.getDate();
+extradays = day-15;
+fine =extradays*50;
+total=parseInt(billAmount)+fine
+if(day>15)
+	{
+	  document.write("you total bill is:"+total);
+	}
+else
+	{
+	  alert("your bill is: "+parseInt(billAmount));
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
